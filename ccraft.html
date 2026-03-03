@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div id="game-container">
         <div id="screen-1" class="screen">
             <h1 class="title">COURT-CRAFT</h1>
+            <p class="subtitle">A Quest for [Her Name]</p>
             <button class="mc-btn" onclick="nextScreen(2)">Start Our Adventure</button>
         </div>
 
@@ -29,7 +29,6 @@
         <div id="screen-3" class="screen hidden">
             <h2 class="screen-title">Craft the Date Invite</h2>
             <div class="recipe-hint">Recipe: 🎟️ + ❤️ + 📍</div>
-            
             <div class="crafting-layout">
                 <div class="grid-3x3">
                     <div class="slot" ondrop="drop(event)" ondragover="allowDrop(event)" data-req="ticket"></div>
@@ -41,7 +40,6 @@
                 <div class="mc-arrow">➜</div>
                 <div class="slot result-slot" id="result-slot"></div>
             </div>
-
             <div class="inventory-bar">
                 <div class="item" draggable="true" ondragstart="drag(event)" id="ticket">🎟️</div>
                 <div class="item" draggable="true" ondragstart="drag(event)" id="heart">❤️</div>
@@ -66,7 +64,6 @@
             <div class="sparks">💎 💙 💎</div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
